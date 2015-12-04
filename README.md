@@ -6,7 +6,7 @@ A port of https://www.youtube.com/watch?v=VHZ7MjrQpL4 for nodecg with dashboard 
 A display of Tip of the Hats social media links such as Twitter, Youtube, and the One Step Camp homepage. Includes SFX.
 
 ### Usage
-1. Install to nodecg/bundles/
+1. Install to nodecg/bundles/ or ```nodecg install rfox90/prime-socialmedia```
 2. Create a config file in your nodecg cfg folder called prime-socialmedia.json. A sample file is included here in the repo
 
 
@@ -35,5 +35,7 @@ A display of Tip of the Hats social media links such as Twitter, Youtube, and th
 #### Special Thanks
 
 toth-socialmedia was used as a base to work from. These wonderful people wrote it:
-[Alex "Lange" Van Camp](http://alexvan.camp), lead programmer & designer of [toth-overlay](https://github.com/Langeh/toth-overlay), from which this package is taken
+
+[Alex "Lange" Van Camp](http://alexvan.camp), lead programmer & designer of [toth-overlay](https://github.com/Langeh/toth-overlay)
+
 [Anthony "Airon" Oetzmann](http://aironaudio.weebly.com/), sound designer  
