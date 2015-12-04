@@ -1,9 +1,8 @@
 #prime-socialmedia
 
+![Preview](http://i.ahref.co.uk/u/r/f.4C.gif)
+
 A port of https://www.youtube.com/watch?v=VHZ7MjrQpL4 for nodecg with dashboard controls.
-
-
-A display of Tip of the Hats social media links such as Twitter, Youtube, and the One Step Camp homepage. Includes SFX.
 
 ### Usage
 1. Install to nodecg/bundles/ or ```nodecg install rfox90/prime-socialmedia```
