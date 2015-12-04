@@ -2,6 +2,7 @@
 
 ![Preview](http://i.ahref.co.uk/u/r/f.4C.gif)
 
+![options](http://i.ahref.co.uk/u/r/v774.png)
 A port of https://www.youtube.com/watch?v=VHZ7MjrQpL4 for nodecg with dashboard controls.
 
 ### Usage
