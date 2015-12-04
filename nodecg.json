@@ -1,0 +1,14 @@
+{
+  "name": "prime-socialmedia",
+  "version": "0.0.1",
+  "nodecgDependency": ">=0.5.0",
+  "homepage": "http://ahref.co.uk/",
+  "authors": [
+    "Richard Fox"
+  ],
+  "description": "Social media links from https://youtu.be/VHZ7MjrQpL4 ported to nodecg with a little more control.",
+  "resolutions": [
+    "720p"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link href="socialmedia.css" rel="stylesheet"/>
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/ionsound/js/ion.sound.min.js"></script>
+    <script src="components/handlebars/handlebars.min.js"></script>
+    <script src="socialmedia.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> 
+</head>
+<body>
+<div id="container">
+    <div id="popup-container">
+   </div>
+</div>
+    
+</div>
+<script id="social-template" type="text/x-handlebars-template">
+    {{#each social}}
+    {{#if enabled}}
+        <div class="popup {{type}}-pop animate-popup">
+            <div class="left">
+                <span class="{{type}}"></span>
+            </div>
+            <div class="right {{type}}Username">
+                <span data-name="{{type}}Username">{{link}}</span>
+            </div>
+        </div>
+    {{/if}}
+    {{/each}}
+</script>
+</body>
+</html>

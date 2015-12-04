@@ -1,0 +1,22 @@
+{
+	"socialLinks": [
+		{
+			"type":"twitter",
+			"enabled": true,
+			"link":"@ProbablePrime"
+		},
+		{
+			"type":"twitter",
+			"enabled": true,
+			"link":"@ProbasdfblePrime"
+		},
+		{
+			"type":"twitter",
+			"enabled": true,
+			"link":"@Probab12312321ePrime"
+		}
+	],
+
+	"displayTime": 4,
+	"intervalTime": 600000
+}
