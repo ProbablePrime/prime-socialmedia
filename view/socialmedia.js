@@ -22,7 +22,9 @@ $(function () {
 
     shouldShow.on("change", function(oldValue,newValue){
         if(newValue) {
-            queueNextLoop();
+            if(shouldShow.value && !showing) {
+                queueNextLoop();
+            }
         } else {
             hideLinks();
             clearNextLoop();
@@ -30,7 +32,9 @@ $(function () {
     });
     gap.on("change",function() {
         clearNextLoop();
-        queueNextLoop();
+        if(shouldShow.value && !showing) {
+            queueNextLoop();
+        }
     });
 
     
@@ -51,6 +55,9 @@ $(function () {
         }));
 
         popups = $('.animate-popup');
+        //if(shouldShow.value) {
+            showLinks();
+        //}
     }
 
 
@@ -74,10 +81,13 @@ $(function () {
     }
 
     function animatePopup() {
+        clearNextLoop();
         if (i >= popups.length) {
             i = 0;
         }
         showing = true;
+        //Prevent some jankiness
+        //$('.show-popup').removeClass('show-popup');
         popups.eq(i).addClass("show-popup")
             .delay(holdTime.value)
             .queue(function() {
@@ -98,8 +108,11 @@ $(function () {
             $.ionSound.play('socialmedia_out-v2');
             $('.show-popup').removeClass('show-popup').finish();
             i = 0;
-            //clearTimeout(nextSocial);
             showing = false;
+            clearNextLoop();
+            if(shouldShow.value && !showing) {
+                queueNextLoop();
+            }
         }
     }
     init();
