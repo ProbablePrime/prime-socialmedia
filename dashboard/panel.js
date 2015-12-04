@@ -12,3 +12,13 @@ $panel.find('input[name=enabled]')
 	.prop('checked', shouldShow.value);
 $panel.find('input[name=interval]').on('change',function() { gap.value = $(this).val(); }).val(gap.value);
 $panel.find('input[name=hold-time]').on('change',function() { holdTime.value = $(this).val(); }).val(holdTime.value);
+
+shouldShow.on("change", function(oldValue,newValue){
+   $panel.find('input[name=enabled]').prop('checked',newValue);
+});
+gap.on("change",function(old,newValue) {
+   $panel.find('input[name=interval]').val(newValue);
+});
+holdTime.on("change",function(old,newValue) {
+   $panel.find('input[name=hold-time]').val(newValue);
+});

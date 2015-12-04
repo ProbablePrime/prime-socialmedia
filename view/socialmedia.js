@@ -46,7 +46,6 @@ $(function () {
     function init() {
         var source   = $("#social-template").html();
         var template = Handlebars.compile(source);
-        console.log(window.nodecg.bundleConfig.socialLinks);
         $('#popup-container').html(template({
             social:window.nodecg.bundleConfig.socialLinks
         }));
@@ -62,12 +61,11 @@ $(function () {
             // Animate Popup
             animatePopup();
         } else {
-            console.log('already showing')
+            
         }
     }
 
     function queueNextLoop() {
-        console.log('queueing for' + gap.value);
         nextSocial = setTimeout(animatePopup, gap.value);
     }
 
