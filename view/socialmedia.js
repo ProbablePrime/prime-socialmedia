@@ -16,8 +16,9 @@ $(function () {
     var showing = false;
     var nextSocial = null;
 
-    var shouldShow = nodecg.Replicant('socialIntervalEnabled', {defaultValue: true});
+    var shouldShow = nodecg.Replicant('socialIntervalEnabled', {defaultValue: false});
     var gap = nodecg.Replicant('socialIntervalGapLength', {defaultValue: 1000 * 60 * 10});
+    var holdTime = nodecg.Replicant('socialHoldTime', {defaultValue: 1000 * 4});
 
     shouldShow.on("change", function(oldValue,newValue){
         if(newValue) {
@@ -66,6 +67,7 @@ $(function () {
     }
 
     function queueNextLoop() {
+        console.log('queueing for' + gap.value);
         nextSocial = setTimeout(animatePopup, gap.value);
     }
 
@@ -79,7 +81,7 @@ $(function () {
         }
         showing = true;
         popups.eq(i).addClass("show-popup")
-            .delay(nodecg.bundleConfig.aTime * 1000)
+            .delay(holdTime.value)
             .queue(function() {
                 $(this).removeClass("show-popup");
                 $(this).dequeue();
