@@ -11,6 +11,7 @@ A port of https://www.youtube.com/watch?v=VHZ7MjrQpL4 for nodecg with dashboard 
 * twitter
 * beam
 * facebook
+* github (added by Bacon_Space )
 * instagram
 * youtube
 * website
