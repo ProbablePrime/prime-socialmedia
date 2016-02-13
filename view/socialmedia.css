@@ -37,6 +37,11 @@
   background-size:40px 40px;
 
 }
+.popup .left .github:before {
+  background: #e6461a url("https://surl.im/i/2f2gp.png") no-repeat 10px 10px;
+   background-size:40px 40px;
+}
+
 .popup .left .facebook:before {
   background: #3a5795 url("http://i.imgur.com/9YhFukZ.png") no-repeat 10px 10px;
 }
