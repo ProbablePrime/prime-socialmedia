@@ -3,7 +3,7 @@
 A port of https://www.youtube.com/watch?v=VHZ7MjrQpL4 for nodecg with dashboard controls.
 
 ### Usage
-1. Install to nodecg/bundles/ or ```nodecg install rfox90/prime-socialmedia```
+1. Install to nodecg/bundles/ or ```nodecg install ProbablePrime/prime-socialmedia```
 2. Create a config file in your nodecg cfg folder called prime-socialmedia.json. A sample file is included here in the repo
 
 
