@@ -1,0 +1,30 @@
+{
+    "name": "prime-socialmedia",
+    "version": "0.2.0",
+    "nodecgDependency": "~0.7.0",
+    "homepage": "http://probableprime.co.uk/",
+    "authors": [
+        "ProbablePrime"
+    ],
+    "description": "Social media links from https://youtu.be/VHZ7MjrQpL4 ported to nodecg with a little more control.",
+    "license": "MIT",
+    "nodecg": {
+        "compatibleRange": "~0.7.0",
+        "graphics": [
+          {
+            "file": "index.html",
+            "width":1920,
+            "height":1080
+          }
+        ],
+        "dashboardPanels": [
+          {
+            "name": "prime-socialmedia",
+            "title": "Social Media",
+            "width": 3,
+            "headerColor": "#262262",
+            "file": "panel.html"
+          }
+        ]
+    }
+}

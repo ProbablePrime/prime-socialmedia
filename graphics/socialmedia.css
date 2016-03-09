@@ -33,7 +33,7 @@
   background: #4b9bd8 url("http://i.imgur.com/PHXvIp5.png") no-repeat 10px 10px;
 }
 .popup .left .beam:before {
-  background: #0E0D15 url('/view/prime-socialmedia/img/beam.png') no-repeat 10px 10px;
+  background: #0E0D15 url('img/beam.png') no-repeat 10px 10px;
   background-size:40px 40px;
 
 }

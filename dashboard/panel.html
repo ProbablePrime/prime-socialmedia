@@ -1,30 +1,26 @@
-<div class="prime-socialmedia">
-  <div class="btn-group btn-group-justified">
-    <div style="padding-right: 2px" class="btn-group">
-      <button name="show" type="button" class="btn btn-xs btn-success">Show</button>
-    </div>
-    <div class="btn-group btn-group-justified">
-      <div style="padding-left: 2px" class="btn-group">
-        <button name="hide" type="button" class="btn btn-xs btn-danger">Hide</button>
-      </div>
-    </div>
-  </div>
-  <h4>Hold Time</h4>
-  <p>How long should each link show?</p>
-  <div class="ncg-label">Hold Time(ms)</div>
-  <input type="number" name="hold-time" style="width: 100%; margin-bottom: 8px;" class="js-content form-control"/>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="components/nodecg-show-hide/nodecg-show-hide.html">
+    <link rel="import" href="components/nodecg-replicant-input/nodecg-replicant-input.html">
+    <link rel="import" href="components/nodecg-toggle/nodecg-toggle.html">
+    <link rel="stylesheet" href="panel.css">
+    <style>
+    </style>
+</head>
+<body>
+  <nodecg-show-hide></nodecg-show-hide>
 
-  <h4>Automatic?</h4>
-  <p>Shall we automatically show the links? And How Often in ms</p>
-  <div class="row">
-    <div class="col-md-6">
-      <input type="number" class="form-control" name="interval" class="interval" placeholder="Interval">
-    </div>
-    <div class="checkbox col-md-6">
-      <label>
-        <input type="checkbox" name="enabled"> Enabled?
-      </label>
-    </div>
-  </div>
-  <button name="show" type="button" class="btn btn-xs btn-block btn-success">Save Settings</button>
-</div>
+  <nodecg-replicant-input label="Hold Time" replicant-name="socialHoldTime"></nodecg-replicant-input>
+
+  <nodecg-toggle replicant-name="socialIntervalEnabled">Play Automatically</nodecg-toggle>
+  <nodecg-replicant-input label="Automatic Interval" replicant-name="socialIntervalGapLength"></nodecg-replicant-input>
+  <script src="panel.js"></script>
+</body>
+</html>
+
+
+
